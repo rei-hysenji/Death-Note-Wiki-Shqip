@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="faqja e regjistrimit ne faqen e webit per serialin e animuar Death Note.">
+    <meta name="keywords" content="Webpage, HTML, regjistrim, death note, seriale, animuar.">
+    <meta name="author" content="Rei Hysenji">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../js/register.js" type="text/javascript"></script>
+
+    <title>Rregjistrohu</title>
+    <link rel="icon" href="../imazhe/icon/logo.png" type="image/icon type">
+</head>
+
+<body>
+    <div class="background">
+        <br><br><br><br><br><br><br><br>
+        <h3>Rregjistrohu</h3>
+        <form method="POST" action="index.html" onsubmit="return false">
+            <p>
+                <img src="../imazhe/icon/user.png" alt="ikona" id="ikona" width="150px" height="150px">
+                <br> Vendos foton e profilit:
+                <input type="file" accept="image/gif, image/jpeg, image/png" name="ikona" onchange="imageAdd(event)"
+                    required />
+            </p>
+            <p>
+                <label>
+                    Emri i P&#235rdoruesit: <input type="text" name="emri" placeholder="emri i llogaris&#235" required
+                        autofocus />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Emri : <input type="text" name="emri" placeholder="emri" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Mbiemri: <input type="text" name="mbiemri" placeholder="mbiemri" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Email: <input type="text" name="email" placeholder="emri@email.com" pattern="^\S+@\S+\.\S+$"
+                        required />
+                </label>
+            </p>
+            <p>
+                <label>Dit&#235lindja:
+                    <input type="date" required />
+                </label>
+            </p>
+            <p>
+                <label for="Gjinia">
+                    Gjinia :
+                </label>
+                <select name="Gjinia">
+                    <option value="Mashkull">Mashkull</option>
+                    <option value="Femer">Fem&#235r</option>
+                    <option value="Tjeter">Tjet&#235r</option>
+                </select>
+            </p>
+            <p>
+                <label>Telefoni:
+                    <input type="tel" placeholder="(###) ###-####" pattern="\(\d{3}\) +\d{3}-\d{4}" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Adresa: <input type="text" name="adresa" placeholder="rruga dhe pallati" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Qyteti: <input type="text" name="qyteti" placeholder="Tirane" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Zona: <input type="text" name="zona" placeholder="Tirane" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Kodi postar/ zip: <input type="text" name="kodipostar" placeholder="0000" pattern="\d{4}"
+                        required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Shteti: <input type="text" name="shteti" placeholder="Shqip&#235ri" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Fjal&#235kalimi: <input id="pass" type="password" name="passwordi"
+                        placeholder="Shkruaj fjal&#235kalimin" minlength="8" maxlength="15" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Konfirmo fjal&#235kalimin: <input id="kpass" type="password" name="passwordi"
+                        placeholder="Konfirmo fjal&#235kalimin" minlength="8" maxlength="15" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="mbaje mend" value="mbaje mend" />mbaje mend
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Regjistrohu" onclick="regjistrohu()" />
+                <input type="reset" value="Pastro" onclick="pastro()" />
+                <a href="index.html">
+                    <label>
+                        <input type="button" name="kthehu" value="Kthehu" />
+                    </label>
+                </a>
+            </p>
+        </form>
+        <p>Autori i faqes: Rei Hysenji<br>
+            <a href="mailto:reihysenji@hotmal.com">reihysenji@hotmail.com</a><br>
+            &copy; E drejta e autorit @ publikuesit e Death Note:
+            <a href="https://www.shueisha.co.jp/en/">Shueisha</a>
+            <a href="https://www.viz.com/">Viz Media</a>
+            <a href="https://www.konami.com/en/">Konami Sports Club Co., Ltd.</a>
+        </p>
+    </div>
+</body>
+
+</html>

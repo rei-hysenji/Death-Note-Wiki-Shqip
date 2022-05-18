@@ -1,0 +1,439 @@
+body {
+  color: white;
+  background: -moz-linear-gradient(
+    0deg,
+    rgb(32, 32, 32),
+    rgb(77, 56, 80),
+    rgb(32, 32, 32)
+  );
+  font-size: medium;
+  font-family: quicksandfont, "Times New Roman", Times, Helvetica; /*llojet e shkrimit*/
+  font-style: normal;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 10em;
+}
+
+@font-face {
+  font-family: quicksandfont;
+  src: url(../font/Quicksand-VariableFont_wght.ttf);
+}
+
+hr {
+  text-align: center;
+  color: white;
+}
+
+.fixed-header {
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-image: url(../imazhe/imazhe/dn0.jpg);
+  background-size: cover;
+  padding: 10px 0;
+  color: rgb(92, 64, 64);
+  z-index: 999;
+}
+
+.icon {
+  width: 20%;
+  margin-left: 0;
+  float: left;
+}
+.navcontainer {
+  width: 60%;
+  margin: 0 auto;
+  float: left;
+}
+.login {
+  width: 20%;
+  margin-left: 0;
+  float: left;
+}
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  font: initial;
+  margin: 0;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0 white;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+}
+.drop {
+  color: white;
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: relative;
+}
+
+.navel {
+  width: 20%;
+  margin-top: 5px;
+  position: fixed;
+}
+
+.charlist {
+  display: inline-block;
+  margin: 3em;
+}
+
+.charlist img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 50px 5px white;
+}
+
+.charlist img:hover {
+  animation: rotimg 5s ease-in-out 0.5s 2 alternate;
+}
+@keyframes rotimg {
+  0% {
+    transform: rotatey(360deg);
+  }
+  25% {
+    transform: rotatey(180deg);
+  }
+  50% {
+    transform: rotatey(0deg);
+  }
+  75% {
+    transform: rotatey(180deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+
+#permbledhja {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#parep {
+  color: white;
+  font-size: large;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.leftside {
+  width: 50%;
+  position: relative;
+  margin-left: 0;
+  float: left;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#myCarousel {
+  box-shadow: 0 0 5px 2px white;
+}
+
+.rightside {
+  width: 50%;
+  position: relative;
+  margin-right: 0;
+  float: right;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../imazhe/background/background\ bigger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.videoin {
+  box-shadow: 0 0 5px 2px white;
+  width: 10em;
+  height: 11em;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.videoin img {
+  margin: 1em;
+  margin-bottom: 0;
+  box-shadow: 0 0 5px 2px white;
+  width: 7em;
+  height: 5em;
+}
+
+.videoin figcaption {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.videoin img:hover,
+.videoin figcaption:hover {
+  cursor: pointer;
+}
+.videoin figcaption:hover {
+  color: blue;
+}
+
+video {
+  margin-top: 4.5em;
+  margin-left: 2em;
+}
+
+footer {
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  display: block;
+}
+
+footer p {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+footer #top {
+  position: absolute;
+  right: 7em;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.im {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 350px;
+}
+
+.im img {
+  position: absolute;
+  cursor: pointer;
+  transition: opacity 4s ease-in-out;
+  width: 900px;
+  height: 300px;
+}
+
+#DN0 {
+  display: block;
+  box-shadow: 0 0 5px 5px white;
+  z-index: 2;
+}
+
+#DN1 {
+  display: block;
+  box-shadow: 0 0 5px 5px white;
+  z-index: 1;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .fixed-header {
+    background-size: inherit;
+  }
+  .icon {
+    width: 20%;
+  }
+  .navcontainer {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+  }
+  .login {
+    width: 5%;
+  }
+  .login > a:nth-child(1) > input:nth-child(1) {
+    margin-left: 25px;
+  }
+
+  .navel {
+    width: 5%;
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+
+  h3 {
+    font-size: 1.17em;
+    line-height: 1.5em;
+  }
+
+  .im {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+  }
+
+  .im img {
+    position: absolute;
+    cursor: pointer;
+    transition: opacity 4s ease-in-out;
+    width: 300px;
+    height: 150px;
+  }
+
+  .leftside {
+    width: 100%;
+  }  
+  
+  .rightside {
+    width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer #top {
+    position: absolute;
+    right: 2em;
+  }
+
+  video {
+    width: 350px;
+    margin-top: 8em;
+    margin-left: 0;
+    }
+  
+}
+
+@media only screen and (max-width: 1007px) and (min-width: 641px) {
+  .login {
+    width: 5%;
+    margin-left: 0;
+    float: left;
+  }
+
+  .im {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 300px;
+  }
+
+  .im img {
+    position: absolute;
+    cursor: pointer;
+    transition: opacity 4s ease-in-out;
+    width: 600px;
+    height: 250px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  video {
+    margin-top: 16em;
+    }
+  
+}

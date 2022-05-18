@@ -1,0 +1,204 @@
+body {
+  color: white;
+  background: -moz-linear-gradient(
+    0deg,
+    rgb(32, 32, 32),
+    rgb(77, 56, 80),
+    rgb(32, 32, 32)
+  );
+  font-size: medium;
+  font-family: quicksandfont, "Times New Roman", Times, Helvetica;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0 2.5em 0 2.5em;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+@font-face {
+  font-family: quicksandfont;
+  src: url(../font/Quicksand-VariableFont_wght.ttf);
+}
+
+hr {
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:active {
+  color: yellow;
+}
+
+.background {
+  background-image: url(../imazhe/background/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.icon {
+  width: 50%;
+  margin-top: 2em;
+  float: left;
+}
+
+.name {
+  width: 50%;
+  margin-top: 2em;
+  float: right;
+}
+.name h1 {
+  margin-right: 3em;
+}
+
+.tab {
+  width: 80%;
+  margin-top: 13em;
+  margin-left: 22em;
+}
+
+table {
+  width: 55%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal table {
+  width:80%;
+  background-color: black;
+  text-align: center;
+  margin:0 auto 0 auto ;
+  box-shadow: 0 5px 10px 5px white;
+}
+
+button {
+  font:initial;
+  margin: 0;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0 white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: blue;
+} 
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+  body{
+    padding: 0;
+  }
+  .background{
+    background-position: center 0;
+    background-size: cover;
+  }
+  .name{
+    margin-top: 0;
+  }
+  .name h1 {
+    margin-right: 0;
+  }
+  .icon{
+    margin-top: 0.1em;
+  }
+  .tab {
+    width: 170%;
+    margin-top: 17em;
+    margin-left: 1em;
+  }
+  .modal{
+    padding-top: 20px;
+  }
+  .modal table{
+    width: 90%;
+  }
+.tooltip .tooltiptext {
+  bottom: -30%;
+}
+
+}
+
+@media only screen and (max-width: 1007px) and (min-width: 641px) {
+body{
+  padding: 0;
+}
+.background{
+  background-position: center 0;
+  background-size: cover;
+}
+.name h1 {
+  margin-right: 0;
+}
+
+.tab {
+  width: 170%;
+  margin-top: 14em;
+  margin-left: 2em;
+}
+.modal{
+  padding-top: 20px;
+}
+.modal table{
+  width: 90%;
+}
+
+}

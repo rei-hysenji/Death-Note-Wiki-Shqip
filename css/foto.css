@@ -1,0 +1,127 @@
+body {
+  color: white;
+  background: -moz-linear-gradient(
+    0deg,
+    rgb(32, 32, 32),
+    rgb(77, 56, 80),
+    rgb(32, 32, 32)
+  );
+  font-size: medium;
+  font-family: quicksandfont, "Times New Roman", Times, Helvetica; /*llojet e shkrimit*/
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+@font-face {
+  font-family: quicksandfont;
+  src: url(../font/Quicksand-VariableFont_wght.ttf);
+}
+
+hr {
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+}
+
+input[type="button"] {
+  font: initial;
+  margin: 0;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0 white;
+  cursor: pointer;
+}
+input[type="button"]:hover {
+  background-color: blue;
+}
+
+figure {
+  display: inline-block;
+  margin: 1.5em;
+  box-shadow: 0 0 5px 2px white;
+}
+
+figure img {
+  transition: animation;
+  cursor: pointer;
+}
+
+figure img:hover {
+  animation: resimg linear 10s 2 1s alternate;
+}
+@keyframes resimg {
+  0% {
+    transform: rotate(360deg) scale(1);
+  }
+  25% {
+    transform: rotate(180deg) scale(0.75);
+  }
+  50% {
+    transform: rotate(0deg) scale(0.5);
+  }
+  75% {
+    transform: rotate(180deg) scale(0.75);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.wrap {
+  display: inline-block;
+  margin: 1.5em;
+  box-shadow: 0 0 5px 2px white;
+}
+
+footer {
+  text-align: left;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  display: block;
+}
+
+footer p {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+footer #top {
+  position: absolute;
+  right: 7em;
+}
+@media only screen and (max-width: 640px) {
+  
+  figure img{
+    width: 300px;
+  }
+  footer #top {
+    position: absolute;
+    right: 2em;
+}
+video{
+  width: 300px;
+}
+}

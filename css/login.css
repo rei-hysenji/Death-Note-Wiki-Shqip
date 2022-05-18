@@ -1,0 +1,133 @@
+body {
+  color: white; 
+  background: -moz-linear-gradient(
+    0deg,
+    rgb(32, 32, 32),
+    rgb(77, 56, 80),
+    rgb(32, 32, 32)
+  ); 
+  font-size: medium; 
+  font-family: quicksandfont, "Times New Roman", Times, Helvetica; 
+  font-style: normal;
+  text-align: center; 
+  margin: 0;
+  padding: 0 2.5em 0 2.5em;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+} 
+
+@font-face {
+  font-family: quicksandfont;
+  src: url(../font/Quicksand-VariableFont_wght.ttf);
+}
+
+hr {
+  text-align: center; 
+  color: white;
+} 
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  font:initial;
+  margin: 0;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0 white;
+  cursor: pointer;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: blue;
+} 
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+} 
+a:link {
+  color: white;
+} 
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+}
+
+#ikona{
+  border-radius: 50%;
+}
+
+footer {
+  text-align: left;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  display: block;
+}
+
+footer p {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+footer #top {
+  position: absolute;
+  right: 7em;
+}
+
+.multicolumns {
+  column-count: 3;
+  column-gap: 50px;
+  column-rule: 5px outset white;
+}
+
+.background {
+  background-image: url(../imazhe/background/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.background1{
+  background-image: url(../imazhe/background/background\ bigger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.foto {
+  width: 300px;
+  height: 200px;
+  float: center;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .multicolumns {
+    column-count: 1;
+  }
+  footer #top {
+    position: absolute;
+    right: 2em;
+}
+}
+
+@media only screen and (max-width: 1007px) and (min-width: 641px) {
+  .multicolumns {
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 5px outset white;
+  }
+}
