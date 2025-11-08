@@ -1,2 +1,3 @@
 # Death-Note-Wiki-Shqip
-I have used HTML, CSS, JAVASCRIPT and Bootstrap.
+evelopment of an informational website for the animated series "Death Note" in Albanian language.
+Used programing languages and frameworks: HTML, CSS, JAVASCRIPT, Bootstrap.
